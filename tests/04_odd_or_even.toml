@@ -1,0 +1,8 @@
+# 公开测试（学生可见）: clings tests 04_odd_or_even 可查看
+[[cases]]
+stdin = "7\n"
+stdout = "num 7 is odd\n"
+
+[[cases]]
+stdin = "12\n"
+stdout = "num 12 is even\n"

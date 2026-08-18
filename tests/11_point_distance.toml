@@ -1,0 +1,8 @@
+# 公开测试（学生可见）: clings tests 11_point_distance 可查看
+[[cases]]
+stdin = "0 0 3 4\n"
+stdout = "5.00\n"
+
+[[cases]]
+stdin = "1 1 4 5\n"
+stdout = "5.00\n"

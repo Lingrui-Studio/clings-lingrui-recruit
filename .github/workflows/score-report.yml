@@ -1,0 +1,32 @@
+name: Score Report
+# 每次推送生成 clings_score.json 成绩单（公开测试），存为 Actions artifact
+# 权威判分（隐藏测试）在截止后由工作室集中执行，见考核指南
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install clings
+        run: pip install --quiet "git+https://github.com/Lingrui-Studio/clings.git"
+      - name: Run score
+        run: clings score --json
+      - name: Upload score report
+        uses: actions/upload-artifact@v4
+        with:
+          name: clings-score
+          path: clings_score.json
+
+      # ── 可选：自动跑隐藏测试（默认关闭，推荐改为截止后集中判分）──
+      # 方式一：GitHub secret 存 base64（组织级 secret 会同步到所有考核仓库，
+      #        但仓库拥有者理论上能读取运行环境，安全级别有限）
+      # - name: Decode hidden tests
+      #   run: |
+      #     echo "${{ secrets.HIDDEN_TESTS_B64 }}" | base64 -d > hidden-tests.tar.gz
+      #     tar xzf hidden-tests.tar.gz
+      # - name: Run score with hidden tests
+      #   run: CLINGS_HIDDEN_TEST_DIR="$GITHUB_WORKSPACE/hidden-tests" clings score --json --hidden

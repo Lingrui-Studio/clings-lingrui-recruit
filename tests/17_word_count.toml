@@ -1,0 +1,24 @@
+# 公开测试（学生可见）: clings tests 17_word_count 可查看
+[[cases]]
+stdin = "This is a book.\n"
+stdout = """
+word 1 found!
+This
+word 2 found!
+is
+word 3 found!
+a
+word 4 found!
+book
+there is 4 words found!
+"""
+
+[[cases]]
+stdin = "  one   two  \n"
+stdout = """
+word 1 found!
+one
+word 2 found!
+two
+there is 2 words found!
+"""

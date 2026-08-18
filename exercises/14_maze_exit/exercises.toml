@@ -1,0 +1,31 @@
+[[exercises]]
+name = "14a_print_board"
+title = "二维数组: 棋盘初始化与打印"
+unit = "unit1"
+lesson = 14
+order = 22
+mode = "stdout"
+source = "14a_print_board.c"
+hint = '''
+用二维数组表示一个 5x5 的棋盘，并打印它。
+
+两个任务:
+1. init_chessboard(): 用 my_rand() % 2 随机填充
+   双重 for 循环遍历每个位置
+
+2. print_chessboard(): 打印棋盘
+   外层循环遍历行，内层遍历列
+   元素之间用空格隔开，每行末尾换行
+
+'''
+
+[[exercises.cases]]
+stdin = ""
+stdout = """
+1 1 1 1 0
+1 1 0 1 1
+0 0 0 0 1
+0 1 1 1 1
+1 0 0 0 0
+"""
+

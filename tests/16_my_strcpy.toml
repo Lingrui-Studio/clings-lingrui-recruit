@@ -1,0 +1,4 @@
+# 公开测试（学生可见）: clings tests 16_my_strcpy 可查看
+[[cases]]
+stdin = "copy me\n"
+stdout = "copy me\n"

@@ -1,0 +1,29 @@
+[[exercises]]
+name = "22a_generate"
+title = "随机数: 生成不重复 4 位数"
+unit = "unit1"
+lesson = 22
+order = 41
+mode = "stdout"
+source = "22a_generate.c"
+hint = '''
+生成 4 个不重复的随机数字 (0-9)。
+
+关键: 怎么保证不重复？用一个 used[10] 数组标记!
+
+步骤:
+1. 生成一个随机数 d = my_rand() % 10
+2. 检查 used[d] 是否已被使用
+3. 如果已使用 → 重新生成 (do-while 很适合!)
+4. 如果未使用 → 记录 secret[i] = d, 标记 used[d] = 1
+
+do-while 的好处: 先执行后判断，确保至少生成一次。
+
+'''
+
+[[exercises.cases]]
+stdin = ""
+stdout = """
+1396
+"""
+

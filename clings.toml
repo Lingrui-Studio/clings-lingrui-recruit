@@ -1,0 +1,12 @@
+# Clings 题库配置 — Lingrui Studio 招新考核题库
+# 题目自动扫描 exercises/**/exercises.toml，无需在此登记
+
+[[units]]
+id = "unit0"
+title = "C Primer 入门"
+lessons = "01-05"
+
+[[units]]
+id = "unit1"
+title = "C Fundamentals 基础"
+lessons = "06-22"

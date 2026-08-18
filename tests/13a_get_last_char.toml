@@ -1,0 +1,8 @@
+# 公开测试（学生可见）: clings tests 13a_get_last_char 可查看
+[[cases]]
+stdin = "A23456\n"
+stdout = "6\n"
+
+[[cases]]
+stdin = "hello\n"
+stdout = "o\n"

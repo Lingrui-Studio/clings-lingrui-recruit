@@ -1,0 +1,71 @@
+[[exercises]]
+name = "13a_get_last_char"
+title = "函数: 字符串取末字符"
+unit = "unit1"
+lesson = 13
+order = 19
+mode = "stdout"
+source = "13a_get_last_char.c"
+hint = '''
+如何获取一个字符串的最后一个字符？
+
+C 字符串以 '\0' 结尾。你需要遍历到末尾。
+
+思路: 一个简单的 while 循环，记录每个字符，
+直到遇到 '\0'。循环结束时，你记录的就是最后一个字符。
+
+'''
+
+[[exercises.cases]]
+stdin = """
+A23456
+"""
+stdout = """
+6
+"""
+
+[[exercises.cases]]
+stdin = """
+hello
+"""
+stdout = """
+o
+"""
+
+[[exercises]]
+name = "13b_is_restricted"
+title = "switch + 三元: 限行判断"
+unit = "unit1"
+lesson = 13
+order = 20
+mode = "stdout"
+source = "13b_is_restricted.c"
+hint = '''
+车辆限行规则: 根据车牌尾号和今天的星期，判断是否限行。
+
+这是 switch-case 的经典应用:
+- 尾号 0/5 → 周一限行
+- 尾号 1/6 → 周二限行
+- ...
+
+函数返回值用三元表达式可以很简洁:
+(条件) ? 1 : 0
+
+'''
+
+[[exercises.cases]]
+stdin = """
+2 6
+"""
+stdout = """
+restricted
+"""
+
+[[exercises.cases]]
+stdin = """
+3 9
+"""
+stdout = """
+free
+"""
+

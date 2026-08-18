@@ -1,0 +1,38 @@
+[[exercises]]
+name = "15a_count_bits_loop"
+title = "位运算: 逐位检测统计 bit 1"
+unit = "unit1"
+lesson = 15
+order = 24
+mode = "stdout"
+source = "15a_count_bits_loop.c"
+hint = '''
+统计一个整数的二进制表示中有多少个 1。
+
+方法一: 逐位检测。
+
+整数有 32 位。逐个检查每一位:
+- 用 1 左移 i 位得到一个只有第 i 位为 1 的掩码
+- 用 & 运算检查原数的第 i 位是否为 1
+
+循环 32 次，统计有多少位是 1。
+
+参考: 本课 README 中的位运算方法一。
+'''
+
+[[exercises.cases]]
+stdin = """
+15
+"""
+stdout = """
+4
+"""
+
+[[exercises.cases]]
+stdin = """
+1024
+"""
+stdout = """
+1
+"""
+

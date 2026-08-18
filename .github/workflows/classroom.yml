@@ -1,0 +1,21 @@
+name: GitHub Classroom Workflow
+# Classroom autograding 工作流:推送即判分
+# autograding 测试(每道题一条)在 Classroom 界面配置,命令为 bash bin/grade.sh <name>
+# 注意:若 Classroom 创建 assignment 时生成了自己的 classroom.yml,把下面的
+# "Install clings" 步骤合并进去即可
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install clings
+        run: pip install --quiet "git+https://github.com/Lingrui-Studio/clings.git"
+      - name: Autograding
+        uses: education/autograding@v1

@@ -1,0 +1,8 @@
+# 公开测试（学生可见）: clings tests 15a_count_bits_loop 可查看
+[[cases]]
+stdin = "15\n"
+stdout = "4\n"
+
+[[cases]]
+stdin = "1024\n"
+stdout = "1\n"

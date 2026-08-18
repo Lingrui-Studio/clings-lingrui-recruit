@@ -1,0 +1,15 @@
+# clings 运行时产物
+.clings-state.txt
+.clings/
+clings_score.json
+
+# 编译产物
+*.exe
+app
+*.o
+
+# 参考答案与隐藏测试
+solutions/
+hidden-tests/
+
+__pycache__/

@@ -1,0 +1,29 @@
+[[exercises]]
+name = "16_my_strcpy"
+title = "指针: mystrcpy 实现"
+unit = "unit1"
+lesson = 16
+order = 28
+mode = "stdout"
+source = "mystrcpy.c"
+hint = '''
+实现自己的字符串复制函数 mystrcpy。
+
+C 程序员的经典写法:
+  while (条件) { 复制一个字符; 移动指针; }
+
+更简洁的 C 惯用法是把复制和条件判断合并在一起。
+想想: 赋值表达式本身也有返回值!
+
+什么时候停止复制？当遇到字符串的终止符 '\0' 时。
+
+参考: 本课 README 中关于指针和 const 的说明。
+'''
+
+[[exercises.cases]]
+stdin = """
+copy me
+"""
+stdout = """
+copy me
+"""

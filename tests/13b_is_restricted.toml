@@ -1,0 +1,9 @@
+# 公开测试（学生可见）: clings tests 13b_is_restricted 可查看
+# 输入格式: 星期(1-7) 车牌尾号(0-9)
+[[cases]]
+stdin = "2 6\n"
+stdout = "restricted\n"
+
+[[cases]]
+stdin = "3 9\n"
+stdout = "free\n"
