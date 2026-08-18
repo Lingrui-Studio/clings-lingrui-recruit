@@ -149,7 +149,7 @@ git push
 
 ### 📕 第一选择：K&R《The C Programming Language》
 
-中文版叫**《C 程序设计语言》（第 2 版）**，作者 Kernighan & Ritchie（Ritchie 就是 C 语言之父本人）。未来你在学 CSAPP 等课程时，会发现 K&R 是指定的C语言参考资料。
+中文版叫 **《C 程序设计语言》（第 2 版）**，作者 Kernighan & Ritchie（Ritchie 就是 C 语言之父本人）。未来你在学 CSAPP 等课程时，会发现 K&R 是指定的C语言参考资料。
 
 - 只有 200 多页，却是无数程序员"顿悟"的起点——**薄，但每一页都值得读三遍**
 - 强烈建议：**精读 + 亲手敲完书里每一个例子**，敲完你就赢了一半
