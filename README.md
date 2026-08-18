@@ -1,4 +1,9 @@
-# 🐣 Clings 招新考核 · 从受精卵到 C 语言程序员的 20 步
+# 🐣 Clings 招新考核
+
+<p align="center">
+  <i>“C is quirky, flawed, and an enormous success.”</i><br/>
+  <b>—— Dennis Ritchie</b>
+</p>
 
 欢迎来到 **Lingrui Studio 招新考核**！
 
@@ -39,7 +44,11 @@
 | Windows 裸机 | 安装 [MSYS2](https://www.msys2.org/)（含 gcc 和 bash），或 MinGW + Git Bash；装完确认 `gcc --version` 有输出 |
 | Python | 3.11+（`setup.sh` 会自动安装 uv 和 clings，一般不用手动管） |
 
+作为过来人，我们强烈推荐你使用 Linux 或 macOS 等 unix-like 操作系统作为开发环境，对于 Windows 玩家，最好的选择是WSL。Windows的包管理始终是相当难评的一个点，~~FUCK MICROSOFT~~。
+
 **一键安装：**
+
+看到仓库目录下的 `setup.sh` 了吗？它就是给你保温箱的开关。只要在终端里敲：
 
 ```bash
 bash setup.sh
@@ -89,7 +98,7 @@ clings score --json        # 生成成绩单 clings_score.json
 
 - 编译器报错 = 毒舌教练。**只看第一行 `error:`**，它已经告诉了你缺什么；后面的洪水一样的输出可以无视。
 - 每题的 `README.md` 是正经讲义，先读它再动手。卡住 30 分钟再按 `h`，卡住 1 小时就去问 AI 或同学。
-- 公开测试你随时能看（`clings tests <名字>`），但**最终成绩包含隐藏测试**——负数和 0、大数和边界、空串和重复空白，都会来。面向公开用例硬编码是活不过隐藏测试的，别偷这个懒。
+- 公开测试你随时能看（`clings tests <名字>`），但**最终成绩包含隐藏测试**——负数和 0、大数和边界、空串和重复空白，都会来。面向公开用例硬编码是活不过隐藏测试的，别偷这个懒。~~我会盯着你们的~~
 
 ### 第 3 步：提交（30 秒，冲刺）
 
@@ -136,11 +145,11 @@ git push
 
 ---
 
-## 学习资源（强烈建议按这个顺序）
+## 学习资源
 
 ### 📕 第一选择：K&R《The C Programming Language》
 
-中文版叫**《C 程序设计语言》（第 2 版）**，作者 Kernighan & Ritchie（Ritchie 就是 C 语言之父本人）。
+中文版叫**《C 程序设计语言》（第 2 版）**，作者 Kernighan & Ritchie（Ritchie 就是 C 语言之父本人）。未来你在学 CSAPP 等课程时，会发现 K&R 是指定的C语言参考资料。
 
 - 只有 200 多页，却是无数程序员"顿悟"的起点——**薄，但每一页都值得读三遍**
 - 强烈建议：**精读 + 亲手敲完书里每一个例子**，敲完你就赢了一半
@@ -190,20 +199,29 @@ A：允许讨论、允许用 AI 当教练，但请确保**每一行代码你都�
 - 不要删除 `.github/` 下的判分工作流
 - 独立完成，诚信作答；硬编码公开用例、篡改判分配置视为作弊
 - 截止时间前完成 push，逾期不候
+- 题库相关问题，欢迎在 Github Issues 里提问
 
 ---
 
 ## 最后的话
 
+> [!TIP]
+> “踏上取经路，比抵达灵山更重要。”
+> —— 冯骥
+
+> [!TIP]
+> “The only way to learn a new programming language is by writing programs in it.”
+> —— Brian Kernighan & Dennis Ritchie，K&R 前言
+
+
 你不需要一开始就很强，你只需要**开始**。
 
 第一道题可能只是 `return 0;`，看起来毫无成就感——但恭喜你，你已经跑通了"编辑 → 编译 → 运行"这整个循环，而这是所有程序员的起点。
 
-20 道题做完，你就不再是胚胎了。我们会在终点等你。
+20 道题做完，你就算是步入了C语言的大门。我们会在终点等你。
 
 加油，开工吧。🐣✨
 
----
+EarthCloud, Rovi~
 
-*维护者注：发布前请在 Linux/WSL 下运行 `bash bin/self-test.sh` 做全流程自测；
-`solutions/` 与 `hidden-tests/` 不随本仓库分发，请在本机妥善保管。*
+
