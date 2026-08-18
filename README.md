@@ -40,7 +40,7 @@
 
 1. **Owner** 选你自己的账号（不是工作室）
 2. 仓库名随意，例如 `clings-recruit`
-3. 记得选 **Private**（作业是隐私，别裸奔）
+3. 记得选 **Public**（便于我们查看你的成绩信息）
 4. 点 **Create repository**
 
 然后把它搬回本地：
