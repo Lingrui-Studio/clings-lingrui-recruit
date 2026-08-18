@@ -32,7 +32,25 @@
 
 ---
 
-## 全程就三步
+## 全程就五步
+
+### 第 0 步：创建你的作业仓库（2 分钟）
+
+你正在读的这份 README 来自模板仓库。点击页面右上角的绿色 **"Use this template"** 按钮：
+
+1. **Owner** 选你自己的账号（不是工作室）
+2. 仓库名随意，例如 `clings-recruit`
+3. 记得选 **Private**（作业是隐私，别裸奔）
+4. 点 **Create repository**
+
+然后把它搬回本地：
+
+```bash
+git clone https://github.com/你的用户名/clings-recruit.git
+cd clings-recruit
+```
+
+> 💡 不会 git？只需要记住两个命令：`git clone`（把仓库搬下来）和后面第 3 步的 `git add/commit/push`（把作业交上去），够用了。
 
 ### 第 1 步：装环境（10 分钟，相当于给胚胎保温）
 
@@ -115,6 +133,15 @@ git push
 - 看结果：仓库 **Actions** 标签页，绿勾 = 全过，红叉 = 有题没过（点进去看是哪题）
 - 每次推送还会生成一份 `clings_score.json` 成绩单，可作为你的存档
 - 以**截止时间前最后一次 push** 为准，改完可以反复推送，自动重判
+
+### 第 4 步：看判分结果（push 后 1~3 分钟）
+
+push 后稍等片刻（Actions 要排队装环境），然后：
+
+1. 回到你的仓库页面，点顶部 **Actions** 标签
+2. 看最新一次 run：**绿色 = 20 题全过**，红色 = 有题没过
+3. 红色就点进去，看哪条测试失败，展开日志搜 `FAILED`，改完重新 push 即可自动重判
+4. 想留成绩单？run 页面底部 **Artifacts** 里可以下载 `clings-score`（`clings_score.json`）
 
 ---
 
@@ -223,5 +250,4 @@ A：允许讨论、允许用 AI 当教练，但请确保**每一行代码你都�
 加油，开工吧。🐣✨
 
 EarthCloud, Rovi~
-
 
