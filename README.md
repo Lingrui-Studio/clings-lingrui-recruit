@@ -30,6 +30,10 @@
 
 每道题都配有中文讲义、知识点、课堂讨论和课后练习——对，就是把你当亲生的在教。
 
+> 以下是克隆到本地后的使用视频，若无法播放，请看 `attachment` 目录下的 `begin.mp4`
+
+<video src="./attachment/begin.mp4"></video>
+
 ---
 
 ## 全程就五步
@@ -62,7 +66,7 @@ cd clings-recruit
 | Windows 裸机 | 安装 [MSYS2](https://www.msys2.org/)（含 gcc 和 bash），或 MinGW + Git Bash；装完确认 `gcc --version` 有输出 |
 | Python | 3.11+（`setup.sh` 会自动安装 uv 和 clings，一般不用手动管） |
 
-作为过来人，我们强烈推荐你使用 Linux 或 macOS 等 unix-like 操作系统作为开发环境，对于 Windows 玩家，最好的选择是WSL。Windows的包管理始终是相当难评的一个点，~~FUCK MICROSOFT~~。
+作为过来人，我们强烈推荐你使用 Linux 或 macOS 等 unix-like 操作系统作为开发环境，对于 Windows 玩家，最好的选择是 WSL。Windows 的包管理始终是相当难评的一个点，~~FUCK MICROSOFT~~。
 
 **一键安装：**
 
@@ -176,7 +180,7 @@ push 后稍等片刻（Actions 要排队装环境），然后：
 
 ### 📕 第一选择：K&R《The C Programming Language》
 
-中文版叫 **《C 程序设计语言》（第 2 版）**，作者 Kernighan & Ritchie（Ritchie 就是 C 语言之父本人）。未来你在学 CSAPP 等课程时，会发现 K&R 是指定的C语言参考资料。
+中文版叫 **《C 程序设计语言》（第 2 版）**，作者 Kernighan & Ritchie（Ritchie 就是 C 语言之父本人）。未来你在学 CSAPP 等课程时，会发现 K&R 是指定的 C 语言参考资料。
 
 - 只有 200 多页，却是无数程序员"顿悟"的起点——**薄，但每一页都值得读三遍**
 - 强烈建议：**精读 + 亲手敲完书里每一个例子**，敲完你就赢了一半
@@ -240,14 +244,12 @@ A：允许讨论、允许用 AI 当教练，但请确保**每一行代码你都�
 > “The only way to learn a new programming language is by writing programs in it.”
 > —— Brian Kernighan & Dennis Ritchie，K&R 前言
 
-
 你不需要一开始就很强，你只需要**开始**。
 
 第一道题可能只是 `return 0;`，看起来毫无成就感——但恭喜你，你已经跑通了"编辑 → 编译 → 运行"这整个循环，而这是所有程序员的起点。
 
-20 道题做完，你就算是步入了C语言的大门。我们会在终点等你。
+20 道题做完，你就算是步入了 C 语言的大门。我们会在终点等你。
 
 加油，开工吧。🐣✨
 
 EarthCloud, Rovi~
-
