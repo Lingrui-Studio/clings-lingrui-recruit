@@ -1,0 +1,204 @@
+{
+  "tests": [
+    {
+      "name": "01a_return_zero",
+      "setup": "",
+      "run": "bash bin/grade.sh 01a_return_zero",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "01b_return_expression",
+      "setup": "",
+      "run": "bash bin/grade.sh 01b_return_expression",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "02a_hello_printf",
+      "setup": "",
+      "run": "bash bin/grade.sh 02a_hello_printf",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "02b_format_print",
+      "setup": "",
+      "run": "bash bin/grade.sh 02b_format_print",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "03a_while_loop",
+      "setup": "",
+      "run": "bash bin/grade.sh 03a_while_loop",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "03b_for_loop",
+      "setup": "",
+      "run": "bash bin/grade.sh 03b_for_loop",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "04_odd_or_even",
+      "setup": "",
+      "run": "bash bin/grade.sh 04_odd_or_even",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "05a_sum_1_to_100",
+      "setup": "",
+      "run": "bash bin/grade.sh 05a_sum_1_to_100",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "05b_sum_even",
+      "setup": "",
+      "run": "bash bin/grade.sh 05b_sum_even",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "06_multiplication_table",
+      "setup": "",
+      "run": "bash bin/grade.sh 06_multiplication_table",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "07a_max_prime",
+      "setup": "",
+      "run": "bash bin/grade.sh 07a_max_prime",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "08_count_digit_nine",
+      "setup": "",
+      "run": "bash bin/grade.sh 08_count_digit_nine",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "11_point_distance",
+      "setup": "",
+      "run": "bash bin/grade.sh 11_point_distance",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "13a_get_last_char",
+      "setup": "",
+      "run": "bash bin/grade.sh 13a_get_last_char",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "13b_is_restricted",
+      "setup": "",
+      "run": "bash bin/grade.sh 13b_is_restricted",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "14a_print_board",
+      "setup": "",
+      "run": "bash bin/grade.sh 14a_print_board",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "15a_count_bits_loop",
+      "setup": "",
+      "run": "bash bin/grade.sh 15a_count_bits_loop",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "16_my_strcpy",
+      "setup": "",
+      "run": "bash bin/grade.sh 16_my_strcpy",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "17_word_count",
+      "setup": "",
+      "run": "bash bin/grade.sh 17_word_count",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "22a_generate",
+      "setup": "",
+      "run": "bash bin/grade.sh 22a_generate",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    }
+  ]
+}
