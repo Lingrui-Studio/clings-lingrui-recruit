@@ -53,31 +53,32 @@ cd clings-recruit
 
 > 💡 不会 git？只需要记住两个命令：`git clone`（把仓库搬下来）和后面第 3 步的 `git add/commit/push`（把作业交上去），够用了。
 
-### 第 1 步：装环境（10 分钟，相当于给胚胎保温）
+### 第 1 步：装环境（10 分钟）
 
 **环境要求：**
 
-| 系统 | 需要什么 |
-|---|---|
-| Linux / macOS / WSL | 系统自带 gcc，直接下一步 |
-| Windows 裸机 | 安装 [MSYS2](https://www.msys2.org/)（含 gcc 和 bash），或 MinGW + Git Bash；装完确认 `gcc --version` 有输出 |
-| Python | 3.11+（`setup.sh` 会自动安装 uv 和 clings，一般不用手动管） |
-
-作为过来人，我们强烈推荐你使用 Linux 或 macOS 等 unix-like 操作系统作为开发环境，对于 Windows 玩家，最好的选择是 WSL。Windows 的包管理始终是相当难评的一个点，~~FUCK MICROSOFT~~。
+作为过来人，我们强烈推荐你使用 Linux 作为开发环境；对于 Windows 玩家，最好的选择是 WSL。Windows 的包管理始终是相当难评的一个点，~~FUCK MICROSOFT~~。
 
 **一键安装：**
 
-看到仓库目录下的 `setup.sh` 了吗？它就是给你保温箱的开关。只要在终端里敲：
+对于 Linux / WSL Ubuntu：
 
 ```bash
+sudo apt update && sudo apt install -y build-essential
 bash setup.sh
+source "$HOME/.local/bin/env"
 ```
 
-脚本会自动：安装 `uv` → 安装 `clings` → 跑 `clings doctor` 自检。
-看到 `compiler smoke test: ok` 就说明保温箱温度正常，可以开始养了。
+对于 macOS（没有 `apt`，先装 Xcode Command Line Tools）：
 
-> 💡 Windows 用户：`setup.sh` 是 bash 脚本，请在 **Git Bash 或 WSL** 里运行，
-> 不要在 cmd / PowerShell 里直接敲。
+```bash
+xcode-select --install
+bash setup.sh
+source "$HOME/.local/bin/env"
+```
+
+这样你就完成了：安装依赖并运行 `clings doctor` 自检。
+看到 `compiler smoke test: ok` 就说明环境正常，可以开始 coding 了。
 
 ### 第 2 步：做题（主线任务）
 
@@ -117,7 +118,6 @@ clings score --json        # 生成成绩单 clings_score.json
 
 - 编译器报错 = 毒舌教练。**只看第一行 `error:`**，它已经告诉了你缺什么；后面的洪水一样的输出可以无视。
 - 每题的 `README.md` 是正经讲义，先读它再动手。卡住 30 分钟再按 `h`，卡住 1 小时就去问 AI 或同学。
-- 公开测试你随时能看（`clings tests <名字>`），但**最终成绩包含隐藏测试**——负数和 0、大数和边界、空串和重复空白，都会来。面向公开用例硬编码是活不过隐藏测试的，别偷这个懒。~~我会盯着你们的~~
 
 ### 第 3 步：提交（30 秒，冲刺）
 
@@ -128,12 +128,6 @@ git add -A
 git commit -m "完成招新考核"
 git push
 ```
-
-每次 push，GitHub Actions 会自动跑 **20 条判分测试**（每道题一条），结果实时可见：
-
-- 看结果：仓库 **Actions** 标签页，绿勾 = 全过，红叉 = 有题没过（点进去看是哪题）
-- 每次推送还会生成一份 `clings_score.json` 成绩单，可作为你的存档
-- 以**截止时间前最后一次 push** 为准，改完可以反复推送，自动重判
 
 ### 第 4 步：看判分结果（push 后 1~3 分钟）
 
@@ -204,17 +198,8 @@ push 后稍等片刻（Actions 要排队装环境），然后：
 **Q：编译报错一大片，看不懂。**
 A：只看第一行 `error:`。然后按 `h` 看提示，或者把第一行错误复制给 AI / 同学。
 
-**Q：Windows 上 `setup.sh` 跑不起来。**
-A：用 Git Bash 或 WSL 运行；确认 `gcc --version` 能输出；`clings doctor` 会告诉你缺什么。
-
 **Q：保存了文件但没反应。**
 A：确认是在题库根目录下运行 `clings`（不是随便哪个文件夹）；看终端有没有报错。
-
-**Q：push 了但 Actions 显示红叉。**
-A：点进 Actions 看是哪道题挂了，改完重新 push 即可，会自动重新判分，不扣"次数"。
-
-**Q：全部通过之后呢？**
-A：等截止。我们会用隐藏测试做权威判分，并公布结果。绿勾只代表公开测试过了，隐藏测试才是终局。
 
 **Q：可以问 AI / 抄同学吗？**
 A：允许讨论、允许用 AI 当教练，但请确保**每一行代码你都能解释**。面试时我们会问的 😄
@@ -242,8 +227,6 @@ A：允许讨论、允许用 AI 当教练，但请确保**每一行代码你都�
 > —— Brian Kernighan & Dennis Ritchie，K&R 前言
 
 你不需要一开始就很强，你只需要**开始**。
-
-第一道题可能只是 `return 0;`，看起来毫无成就感——但恭喜你，你已经跑通了"编辑 → 编译 → 运行"这整个循环，而这是所有程序员的起点。
 
 20 道题做完，你就算是步入了 C 语言的大门。我们会在终点等你。
 
